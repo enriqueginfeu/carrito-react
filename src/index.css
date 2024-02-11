@@ -136,8 +136,16 @@ header{
 /* Main */
 .container-items{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
+    padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+    .container-items {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+    }
 }
 
 .item{
